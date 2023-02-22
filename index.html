@@ -416,8 +416,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-block">
+          <h3 class="footer-subscrible">Subscribe</h3>
+          <form class="footer-form">
+            <label class="footer-label">
+              <input class="footer-input" type="email" name="email" placeholder="E-mail" required />
+            </label>
+            <button class="footer-btn" type="submit"
+              >Subscribe
+              <svg class="footer-form-icons" width="24" height="24">
+                <use href="./images/symbol-defs-1.svg#icon-Frame3"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!--Modal form-->
     <div class="backdrope is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
@@ -425,6 +440,58 @@
             <use href="./images/symbol-defs.svg#icon-close-black-18dp"></use>
           </svg>
         </button>
+
+        <div class="backdrope-subscrible">
+          <p class="drope-title">Leave your contacts and we will call you back</p>
+          <div class="drope-form-list">
+            <form class="backdrope-form">
+              <label class="drope-label" for="user-name">Name</label>
+              <div class="drope-form-group">
+                <input
+                  class="drope-input"
+                  type="text"
+                  id="user-name"
+                  required
+                  pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                  title="Username must be two words separated by space"
+                />
+                <svg class="drope-form-icons" width="20" height="20">
+                  <use href="./images/symbol-defs-1.svg#icon-person-black-18dp"></use>
+                </svg>
+              </div>
+              <label class="drope-label" for="user-phone">Phone</label>
+              <div class="drope-form-group">
+                <input class="drope-input" type="tel" id="user-phone" required min="12" />
+                <svg class="drope-form-icons" width="20" height="20">
+                  <use href="./images/symbol-defs-1.svg#icon-phone-black-18dp"></use>
+                </svg>
+              </div>
+              <label class="drope-label" for="user-email">Email</label>
+              <div class="drope-form-group">
+                <input class="drope-input" type="email" id="user-email" minlength="" />
+                <svg class="drope-form-icons" width="20" height="20">
+                  <use href="./images/symbol-defs-1.svg#icon-email-black-18dp"></use>
+                </svg>
+              </div>
+              <label class="drope-label" for="user-comment">Comment</label>
+              <textarea
+                class="drope-area"
+                name="comment"
+                id="user-comment"
+                rows="5"
+                placeholder="Text input"
+              ></textarea>
+              <label class="privacy-label">
+                <input class="privacy-input" type="checkbox" name="checkbox" value="accept" />
+                <span class="privacy-text"
+                  >I accept the terms and conditions of the
+                  <a class="privacy-link" href="">Privacy Policy</a></span
+                >
+              </label>
+              <button class="drope-btn" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Modal JS-->
